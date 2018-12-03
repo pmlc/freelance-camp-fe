@@ -8,27 +8,15 @@ import { Proposal } from './proposal';
 })
 export class ProposalListComponent  {
 
+	proposalOne: Proposal = new Proposal(15, 'Abc Company', 'http://portfolio.jordanhudgens.com', 'Ruby on Rails', 150, 120, 15, 'jordan@devcamp.com')
+	proposalTwo: Proposal = new Proposal(99, 'XYZ Company', 'http://portfolio.jordanhudgens.com', 'Ruby on Rails', 150, 120, 15, 'jordan@devcamp.com')
+	proposalThree: Proposal = new Proposal(300, 'Something Company', 'http://portfolio.jordanhudgens.com', 'Ruby on Rails', 150, 120, 15, 'jordan@devcamp.com')
+
 	proposals: Proposal[] = [
-			{
-				id: 99,
-				customer: "XYZ Company",
-				portfolio_url: "http://portfolio.jordanhudgens.com",
-				tools: "Ruby on Rails",
-				estimated_hours: 200,
-				hourly_rate: 80,
-				weeks_to_complete: 3,
-				client_email: "pmlc@iinet.net.au"
-			},
-			{
-				id: 88,
-				customer: "XYZ Company",
-				portfolio_url: "http://portfolio.jordanhudgens.com",
-				tools: "Ruby on Rails",
-				estimated_hours: 200,
-				hourly_rate: 80,
-				weeks_to_complete: 3,
-				client_email: "pmlc@iinet.net.au"
-			}
-  ]
+		this.proposalOne,
+		this.proposalTwo,
+		this.proposalThree
+	]
+
   
 }
