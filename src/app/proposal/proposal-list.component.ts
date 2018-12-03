@@ -7,7 +7,7 @@ import { Proposal } from './proposal';
   styleUrls: ['./proposal-list.component.css']
 })
 export class ProposalListComponent  {
-	
+
 	proposals: Proposal[] = [
 			{
 				id: 99,
@@ -29,7 +29,6 @@ export class ProposalListComponent  {
 				weeks_to_complete: 3,
 				client_email: "pmlc@iinet.net.au"
 			}
-	
   ]
-}
   
+}
