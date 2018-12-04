@@ -12,6 +12,12 @@
 							#customer='ngModel'
 							[(ngModel)]="proposal.customer"
 			>
+			<div *ngIf="customer.invalid && (customer.dirty || customer.touched)"
+    			class="alert alert-danger">
+ 				 <div *ngIf="customer.errors.required">
+   					 Name is required.
+  				</div>
+  			</div>	
 		</div>
 
 		<div class="form-group">
@@ -23,6 +29,12 @@
 							#portfolio_url='ngModel'
 							[(ngModel)]="proposal.portfolio_url"
 			>
+			<div *ngIf="portfolio_url.invalid && (portfolio_url.dirty || portfolio_url.touched)"
+    			class="alert alert-danger">
+ 				 <div *ngIf="portfolio_url.errors.required">
+   					 Portfolio URL is required
+  				</div>
+  			</div>
 		</div>
 
 		<div class="form-group">
@@ -35,6 +47,12 @@
 							#tools='ngModel'
 							[(ngModel)]="proposal.tools"
 			>
+			<div *ngIf="tools.invalid && (tools.dirty || tools.touched)"
+    			class="alert alert-danger">
+ 				 <div *ngIf="tools.errors.required">
+   					 Tools are required.
+  				</div>
+  			</div>
 		</div>
 
 		<div class="form-group">
@@ -46,6 +64,12 @@
 							#estimated_hours='ngModel'
 							[(ngModel)]="proposal.estimated_hours"
 			>
+			<div *ngIf="estimated_hours.invalid && (estimated_hours.dirty || estimated_hours.touched)"
+    			class="alert alert-danger">
+ 				 <div *ngIf="estimated_hours.errors.required">
+   					 Estimated hours are required.
+  				</div>
+  			</div>
 		</div>
 
 		<div class="form-group">
@@ -57,6 +81,13 @@
 							#hourly_rate='ngModel'
 							[(ngModel)]="proposal.hourly_rate"
 			>
+			<div *ngIf="hourly_rate.invalid && (hourly_rate.dirty || hourly_rate.touched)"
+    			class="alert alert-danger">
+ 				 <div *ngIf="hourly_rate.errors.required">
+   					 You need to enter your hourly rate for the project
+  				</div>
+  			</div>
+			
 		</div>
 
 		<div class="form-group">
@@ -68,6 +99,13 @@
 							#weeks_to_complete='ngModel'
 							[(ngModel)]="proposal.weeks_to_complete"
 			>
+			<div *ngIf="weeks_to_complete.invalid && (weeks_to_complete.dirty || weeks_to_complete.touched)"
+    			class="alert alert-danger">
+ 				 <div *ngIf="hourly_rate.errors.required">
+   					 You need to enter the weeks you estimate to complete the project
+  				</div>
+  			</div>
+			
 		</div>
 
 		<div class="form-group">
@@ -103,4 +141,3 @@
 
 
 	<p>I am excited to working with you and build out this project.</p>
-</div>
