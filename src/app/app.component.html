@@ -1,13 +1,26 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
 </div>
 
-<p> <a routerLink="/homepage">Homepage</a></p> 
-<p> <a routerLink="/documents">Documents</a></p> 
-<p> <a routerLink="/proposal">Proposals</a></p> 
-<p> <a routerLink="/proposal/new">New Proposals</a></p> 
+<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class='nav-link' routerLink="/homepage" routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class='nav-link' routerLink="/documents" routerLinkActive="active">Documents</a>
+      </li>
+      <li class="nav-item">
+        <a class='nav-link' routerLink="/proposal" routerLinkActive="active">Proposals List</a>
+      </li>
+      <li class="nav-item">
+        <a class='nav-link' routerLink="/proposal/new" routerLinkActive="active">New Proposals</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <router-outlet></router-outlet>
