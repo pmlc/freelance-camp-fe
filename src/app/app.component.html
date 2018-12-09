@@ -1,3 +1,4 @@
+<br /><br /><br /><br /><br />
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -14,7 +15,7 @@
         <a class='nav-link' routerLink="/documents" routerLinkActive="active">Documents</a>
       </li>
       <li class="nav-item">
-        <a class='nav-link' routerLink="/proposal" routerLinkActive="active">Proposals List</a>
+        <a class='nav-link' routerLink="/proposal" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Proposals</a>
       </li>
       <li class="nav-item">
         <a class='nav-link' routerLink="/proposal/new" routerLinkActive="active">New Proposals</a>
@@ -23,4 +24,6 @@
   </div>
 </nav>
 
-<router-outlet></router-outlet>
+<div class="app-body">
+	<router-outlet></router-outlet>
+</div>
