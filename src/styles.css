@@ -2,5 +2,10 @@
 @import "~font-awesome/css/font-awesome.css";
 
 body {
-	background-color: lightblue
+	background-color: #252830;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.headline {
+	color: white;
 }
